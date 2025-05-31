@@ -1,0 +1,10 @@
+// SpaceX Launch Data Flowchart
+digraph {
+	Start -> API1
+	API1 -> Extract1
+	Extract1 -> API2
+	API2 -> Extract2
+	Extract2 -> Associate
+	Associate -> Analyze
+	Analyze -> End
+}
